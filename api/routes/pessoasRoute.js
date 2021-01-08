@@ -8,6 +8,7 @@ router.get('/pessoas/:id', PessoaController.getOne)
 router.post('/pessoas', PessoaController.create)
 router.put('/pessoas/:id', PessoaController.update)
 router.delete('/pessoas/:id', PessoaController.delete)
+router.post('/pessoas/:id/restaura', PessoaController.restore)
 
 router.get('/pessoas/:estudanteId/matricula/:matriculaId', PessoaController.getOneRegister)
 router.post('/pessoas/:estudanteId/matricula', PessoaController.createRegister)
